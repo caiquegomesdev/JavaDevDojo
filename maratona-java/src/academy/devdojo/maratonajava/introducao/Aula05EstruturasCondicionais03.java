@@ -7,7 +7,7 @@ public class Aula05EstruturasCondicionais03 {
 
         Scanner sc = new Scanner(System.in);
         double salario = sc.nextDouble();
-        
+
         //(condicao) ? verdadeiro : falso;
         String resultado = salario > 5000 ? "Vou Doar 500 reais" : "Ainda nao tenho condicoes, mas terei!";
 
