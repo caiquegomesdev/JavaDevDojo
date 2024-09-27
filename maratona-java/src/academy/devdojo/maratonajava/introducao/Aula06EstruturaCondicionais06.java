@@ -37,5 +37,19 @@ public class Aula06EstruturaCondicionais06 {
 
                 sc.close();
         }
+
+        char sexo = 'M';
+        switch (sexo){
+            case 'M':
+                System.out.println("HOMEM");
+                break;
+            case 'F': {
+                System.out.println("MULHER");
+                break;
+            }
+            default:
+                System.out.println("INVALIDO!");
+                break;
+        }
     }
 }
