@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.introducao;
 
 import java.util.Scanner;
 
-public class Aula06EstruturaCondicionais06 {
+public class Aula05EstruturaCondicionais06 {
     public static void main(String[] args) {
         // imprima o dia da semana, considerando 1 como domingo
         Scanner sc = new Scanner(System.in);

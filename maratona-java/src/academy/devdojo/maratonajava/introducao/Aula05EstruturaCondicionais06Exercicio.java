@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.introducao;
 
 import java.util.Scanner;
 
-public class Aula06EstruturaCondicionais06Exercicio {
+public class Aula05EstruturaCondicionais06Exercicio {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         byte dia = sc.nextByte();
@@ -30,7 +30,7 @@ public class Aula06EstruturaCondicionais06Exercicio {
                 System.out.println("Sábado - Fim de semana");
                 break;
             default:
-                System.out.println("Não é dia da semana");
+                System.out.println("Não é dia da semana.");
                 break;
         }
 
