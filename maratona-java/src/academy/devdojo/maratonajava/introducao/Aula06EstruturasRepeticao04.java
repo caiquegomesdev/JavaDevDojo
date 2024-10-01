@@ -8,11 +8,7 @@ public class Aula06EstruturasRepeticao04 {
             if (valorParcela < 1000){
                 break;
             }
-            if(valorParcela >= 1000){
-                System.out.println("Parcela " + parcela + "R$ " + valorParcela);
-            } else {
-                break;
-            }
+            System.out.println("Parcela " + parcela + "R$ " + valorParcela);
         }
     }
 }
