@@ -19,5 +19,12 @@ public class Aula08ArraysMultidimensionais02 {
                 System.out.print(num + " ");
             }
         }
+
+        for(int[] arrayBase: arrayInt2){
+            System.out.println("\n------");
+            for(int num: arrayBase){
+                System.out.print(num + " ");
+            }
+        }
     }
 }
