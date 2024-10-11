@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.ExecicioOrienta
 
 import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.ExecicioOrientacaoObjetosClasses.Objetos.Aviao;
 import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.ExecicioOrientacaoObjetosClasses.Objetos.Carro;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.ExecicioOrientacaoObjetosClasses.Objetos.Carro1;
 import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.ExecicioOrientacaoObjetosClasses.Objetos.Moto;
 
 public class Test {
@@ -12,6 +13,17 @@ public class Test {
         carro.ano = 2024;
 
         System.out.println("Nome: " + carro.Nome +" Modelo: "+ carro.Modelo +" Ano: "+ carro.ano);
+
+        System.out.println("---------------------------------");
+
+        Carro1 carro1 = new Carro1();
+        carro1.Nome = "Fusca Bala";
+        carro1.Modelo = "Sport";
+        carro1.ano = 1968;
+
+        System.out.println("Nome: " + carro1.Nome +" Modelo: "+ carro1.Modelo +" Ano: "+ carro1.ano);
+
+
 
         System.out.println("---------------------------------");
 
