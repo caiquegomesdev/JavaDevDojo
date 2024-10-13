@@ -11,7 +11,9 @@ public class CalculadoraTest01 {
         calculadora.subtraiDoisNumeros();
         calculadora.multiplicaDoisNumeros();
         calculadora.divideDoisNumeros();
-        calculadora.divideDoisValores();
+
+        double result = calculadora.divideDoisValores(20,0);
+        System.out.println(result);
 
         System.out.println("Finalizando CalculadoraTest01");
     }
