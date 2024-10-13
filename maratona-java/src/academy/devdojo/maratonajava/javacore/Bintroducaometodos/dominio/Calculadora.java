@@ -48,8 +48,11 @@ public class Calculadora {
     }
 
     public double divideDoisValores(){
+        Scanner sc = new Scanner(System.in);
+        double divideValor = new sc.nextDouble();
+        double divideValor2 = new sc.nextDouble();
         System.out.println("public double divideDoisValores()");
-        return 0;
+        return divideValor/divideValor2;
 
     }
 
