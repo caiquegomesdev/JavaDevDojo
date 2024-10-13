@@ -47,13 +47,6 @@ public class Calculadora {
         sc.close();
     }
 
-    public double divideDoisValores(){
-        Scanner sc = new Scanner(System.in);
-        double divideValor = new sc.nextDouble();
-        double divideValor2 = new sc.nextDouble();
-        System.out.println("public double divideDoisValores()");
-        return divideValor/divideValor2;
-
-    }
+    
 
 }
