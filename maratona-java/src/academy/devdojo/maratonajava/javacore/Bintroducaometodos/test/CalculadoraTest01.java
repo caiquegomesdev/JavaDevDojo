@@ -2,7 +2,6 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 
 import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Calculadora;
 
-import java.util.Scanner;
 
 public class CalculadoraTest01 {
     public static void main(String[] args) {
@@ -12,6 +11,7 @@ public class CalculadoraTest01 {
         calculadora.subtraiDoisNumeros();
         calculadora.multiplicaDoisNumeros();
         calculadora.divideDoisNumeros();
+        calculadora.divideDoisValores();
 
         System.out.println("Finalizando CalculadoraTest01");
     }

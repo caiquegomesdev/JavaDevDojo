@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class CalculadoraTESTDOTEST {
 
     public void somaDoisNumeros(){
         Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class Calculadora {
         int soma2 = sc.nextInt();
         System.out.println("Soma: ");
         System.out.println(soma + soma2);
-        System.out.println("----------------------");
+
 
     }
 
@@ -21,7 +21,6 @@ public class Calculadora {
 
         System.out.println("Subtracao: ");
         System.out.println(subtracao - subtracao2);
-        System.out.println("----------------------");
 
     }
 
@@ -32,7 +31,6 @@ public class Calculadora {
 
         System.out.println("Multiplicacao: ");
         System.out.println(multiplica * multiplica2);
-        System.out.println("----------------------");
 
     }
 
@@ -43,14 +41,9 @@ public class Calculadora {
 
         System.out.println("Divisao: ");
         System.out.println(divide / divide2);
-        System.out.println("----------------------");
         sc.close();
     }
 
-    public double divideDoisValores(){
-        System.out.println("public double divideDoisValores()");
-        return 0;
 
-    }
 
 }
