@@ -14,6 +14,7 @@ public class CalculadoraTest01 {
 
         double result = calculadora.divideDoisValores(20,0);
         System.out.println(result);
+        System.out.println(calculadora.divideDoisValores02(86,0));
 
         System.out.println("Finalizando CalculadoraTest01");
     }
