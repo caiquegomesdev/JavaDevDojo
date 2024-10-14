@@ -11,10 +11,11 @@ public class CalculadoraTest01 {
         calculadora.subtraiDoisNumeros();
         calculadora.multiplicaDoisNumeros();
         calculadora.divideDoisNumeros();
+        calculadora.divideDoisValores02(86,0);
 
         double result = calculadora.divideDoisValores(20,0);
         System.out.println(result);
-        System.out.println(calculadora.divideDoisValores02(86,0));
+
 
         System.out.println("Finalizando CalculadoraTest01");
     }
