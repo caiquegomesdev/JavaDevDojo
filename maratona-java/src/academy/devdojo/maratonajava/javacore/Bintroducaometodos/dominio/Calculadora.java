@@ -61,12 +61,12 @@ public class Calculadora {
         System.out.println(num1/num2);;
     }
 
-    public void alteraDoisNumeros(int num1, int num2){
-        num1 = 99;
-        num2 = 33;
+    public void alteraDoisNumeros(int numero1, int numero2){
+        numero1 = 99;
+        numero2 = 33;
         System.out.println("Dentro do alteraDoisNumeros");
-        System.out.println("Num1 " +num1);
-        System.out.println("Num2 "+ num2);
+        System.out.println("Num1 " +numero1);
+        System.out.println("Num2 "+ numero2);
     }
 
 }
