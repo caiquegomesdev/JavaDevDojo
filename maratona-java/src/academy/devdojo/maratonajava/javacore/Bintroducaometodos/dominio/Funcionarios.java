@@ -16,6 +16,7 @@ public class Funcionarios {
         for (double salario: salarios){
             System.out.print(salario + " ");
         }
+        imprimeMediaSalario();
     }
 
     public void imprimeMediaSalario(){
