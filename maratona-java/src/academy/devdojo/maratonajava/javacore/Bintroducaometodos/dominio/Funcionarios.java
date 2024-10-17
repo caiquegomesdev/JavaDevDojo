@@ -20,11 +20,15 @@ public class Funcionarios {
     }
 
     public void imprimeMediaSalario(){
+        
+
         double media = 0;
-        for (double salario: salarios){
-            media =+ salario;
+        if (salarios != null) {
+            for (double salario : salarios) {
+                media = +salario;
+            }
+            media /= salarios.length;
         }
-        media /= salarios.length;
         System.out.println("\nMEDIA SALARIAL: " + media);
     }
 }
