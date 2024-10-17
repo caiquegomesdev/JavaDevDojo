@@ -10,6 +10,9 @@ public class Funcionarios {
         System.out.println("-----------------");
         System.out.println("NOME: " + this.nome);
         System.out.println("IDADE: " + this.idade);
+        if (salarios == null){
+            return;
+        }
         System.out.println("SALARIO 1: " + this.salarios[0]);
         System.out.println("SALARIO 2: " +this.salarios[1]);
         System.out.println("SALARIO 3: " +this.salarios[2]);
@@ -20,15 +23,16 @@ public class Funcionarios {
     }
 
     public void imprimeMediaSalario(){
-        
+        if (salarios == null) {
+            return;
+        }
 
         double media = 0;
-        if (salarios != null) {
             for (double salario : salarios) {
                 media = +salario;
             }
             media /= salarios.length;
-        }
+
         System.out.println("\nMEDIA SALARIAL: " + media);
     }
 }
