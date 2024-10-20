@@ -7,11 +7,11 @@ public class FuncionariosTest {
         Funcionarios funcionario = new Funcionarios();
 
 
-        funcionario.nome= "Gomes";
-        funcionario.idade = 25;
-        funcionario.salarios = new double[]{1200, 2000.20, 5500.99};
-
+        funcionario.setNome("Gomes");
+        funcionario.setIdade(25);
+        funcionario.setSalarios(new double[]{1200, 2000.20, 5500.99});
         funcionario.imprimeDados();
+        System.out.println("MEdia " + funcionario.getMedia());
 
     }
 }
