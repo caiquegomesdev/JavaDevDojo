@@ -14,6 +14,10 @@ public class Anime {
         this.genero = genero;
     }
 
+    public Anime(){
+//      sobrecarga é metodos com o mesmo nome com quantidades ou tipos dos parametros diferentes
+    }
+
 
     public void imprime(){
         System.out.println(this.nome);
