@@ -5,10 +5,8 @@ import academy.devdojo.maratonajava.javacore.Csobnrecargametodos.dominio.Anime;
 public class AnimeTest01 {
     public static void main(String[] args) {
         Anime anime = new Anime();
-        anime.init("Boku no hero","TV", 20);
-
-        anime.setGenero("Ação");
-
+        //anime.init("Boku no hero","TV", 20);
+        anime.init2("Boku no hero","TV", 20,"Ação");
         anime.imprime();
 
     }
