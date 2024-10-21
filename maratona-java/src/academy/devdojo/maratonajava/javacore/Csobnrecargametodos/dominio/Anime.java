@@ -12,7 +12,7 @@ public class Anime {
         this.episodios = episodios;
     }
 
-    public void init2(String nome, String tipo, int episodios, String genero){
+    public void init(String nome, String tipo, int episodios, String genero){
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
