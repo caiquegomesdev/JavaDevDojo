@@ -6,21 +6,14 @@ public class Anime {
     private int episodios;
     private String genero;
 
-    public Anime(String nome){
+    public Anime(String nome, String tipo, int episodios, String genero){
         System.out.println("DENTRO DO CONSTRUTOR: ");
-        this.nome = nome;
-    }
-
-    public void init(String nome, String tipo, int episodios){
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
-    }
-
-    public void init(String nome, String tipo, int episodios, String genero){
-        this.init(nome, tipo, episodios);
         this.genero = genero;
     }
+
 
     public void imprime(){
         System.out.println(this.nome);
