@@ -10,9 +10,10 @@ public class Anime {
     private String estudio;
 
     //      sobrecarga é metodos com o mesmo nome com quantidades ou tipos dos parametros diferentes
-    public Anime(String nome, String tipo, int episodios, String genero){
-        System.out.println("--DENTRO DO CONSTRUTOR:-- ");
 
+    public Anime(String nome, String tipo, int episodios, String genero){
+        System.out.println("--DENTRO DO CONSTRUTOR--");
+        
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
