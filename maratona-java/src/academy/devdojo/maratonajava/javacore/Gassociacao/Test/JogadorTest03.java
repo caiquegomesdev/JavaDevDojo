@@ -11,6 +11,7 @@ public class JogadorTest03 {
         Jogador[] jogadores = {jogador, jogador2};
 
         jogador.setTime(time);
+        jogador2.setTime(time);
 
         time.setJogadores(jogadores);
 
