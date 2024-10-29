@@ -8,7 +8,10 @@ public class LeituraDoTecladoTest01 {
         System.out.println("DIGITE SEU NOME ABAIXO: ");
         String next = entrada.next();
         System.out.println("Seu nome é " + next);
+        System.out.println("----------------------------");
+        System.out.println("DIGITTE SUA IDADE ABAIXO: ");
         
+
 
         entrada.close();
     }
