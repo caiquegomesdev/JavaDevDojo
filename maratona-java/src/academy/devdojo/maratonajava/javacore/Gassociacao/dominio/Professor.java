@@ -20,7 +20,21 @@ public class Professor {
         this.seminarios = seminarios;
     }
 
-    
+    public void imprime(){
+        System.out.println("-----------");
+        System.out.println("PROFESSOR: " + this.nome);
+        if(this.seminarios == null) return;
+        System.out.println("## SEMINARIOS CADASTRADOS ##");
+        for (Seminario seminario : this.seminarios){
+            System.out.println(seminario.getTitulo());
+            System.out.println(seminario.getLocal().getEndereco());
+            if(seminario.getAlunos() == null) continue;
+            System.out.println("** ALUNOS **");
+            for (Aluno aluno : seminario.getAlunos()){
+                System.out.println("Aluno : " + aluno.getNome() + " Idade : " + aluno.getIdade());
+            }
+        }
+    }
 
     public String getNome() {
         return nome;
