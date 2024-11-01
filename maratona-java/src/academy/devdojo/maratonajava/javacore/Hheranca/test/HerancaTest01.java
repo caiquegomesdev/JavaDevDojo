@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.test;
 
 import academy.devdojo.maratonajava.javacore.Hheranca.dominio.Endereco;
+import academy.devdojo.maratonajava.javacore.Hheranca.dominio.Funcionario;
 import academy.devdojo.maratonajava.javacore.Hheranca.dominio.Pessoa;
 
 public class HerancaTest01 {
@@ -12,7 +13,16 @@ public class HerancaTest01 {
         pessoa.setNome("Izuko Midorya");
         pessoa.setCpf(" 4129002002");
         pessoa.setEndereco(endereco);
-
         pessoa.imprime();
+
+        System.out.println("--------------------------");
+
+        Funcionario funcionario = new Funcionario();
+        funcionario.setNome("Monkey D. Luffy");
+        funcionario.setCpf("300000000000");
+        funcionario.setEndereco(endereco);
+        funcionario.setSalario(20000);
+
+        funcionario.imprime();
     }
 }
