@@ -12,5 +12,7 @@ public class HerancaTest01 {
         pessoa.setNome("Izuko Midorya");
         pessoa.setCpf(" 4129002002");
         pessoa.setEndereco(endereco);
+
+        pessoa.imprime();
     }
 }
