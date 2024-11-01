@@ -3,11 +3,7 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Endereco {
     private String rua;
     private String cep;
-
-    public Endereco(String rua, String cep) {
-        this.rua = rua;
-        this.cep = cep;
-    }
+    private Endereco endereco;
 
     public String getRua() {
         return rua;
@@ -23,5 +19,13 @@ public class Endereco {
 
     public void setCep(String cep) {
         this.cep = cep;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }

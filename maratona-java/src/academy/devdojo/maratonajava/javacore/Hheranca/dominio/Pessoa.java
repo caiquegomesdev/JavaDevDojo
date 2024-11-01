@@ -3,10 +3,12 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Pessoa {
     private String nome;
     private String cpf;
+    private Endereco endereco;
 
-    public Pessoa(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
+    public void imprime(){
+        System.out.println(this.nome);
+        System.out.println(this.cpf);
+        System.out.println(this.endereco.getRua() + " " + this.endereco.getCep());
     }
 
     public String getNome() {
@@ -23,5 +25,13 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }
