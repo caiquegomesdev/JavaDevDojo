@@ -15,6 +15,8 @@ public class HerancaTest01 {
         pessoa.setEndereco(endereco);
         pessoa.imprime();
 
+
+
         System.out.println("--------------------------");
 
         Funcionario funcionario = new Funcionario();
