@@ -5,6 +5,10 @@ public class Carro {
     public static final double VELOCIDADE_LIMITE = 250;//final = constante
     public static final Comprador COMPRADOR = new Comprador();//a ref desse obj nunca poderar se alterada
 
+    public final void imprime(){
+        System.out.println(this.nome);
+    }
+
     public String getNome() {
         return nome;
     }
