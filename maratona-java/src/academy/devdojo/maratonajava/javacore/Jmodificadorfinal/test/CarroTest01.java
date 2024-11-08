@@ -12,7 +12,7 @@ public class CarroTest01 {
         carro.COMPRADOR.setNome("Okarun");
         System.out.println(carro.COMPRADOR);
         Ferrari ferrari = new Ferrari();
-        ferrari.setNome("Enzo");
+        ferrari.setNome("Enzo Vermelha");
         ferrari.imprime();
     }
 }
