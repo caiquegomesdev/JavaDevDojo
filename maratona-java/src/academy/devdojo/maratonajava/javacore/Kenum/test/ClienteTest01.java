@@ -2,13 +2,14 @@ package academy.devdojo.maratonajava.javacore.Kenum.test;
 
 import academy.devdojo.maratonajava.javacore.Kenum.dominio.Cliente;
 import academy.devdojo.maratonajava.javacore.Kenum.dominio.TipoCliente;
+import academy.devdojo.maratonajava.javacore.Kenum.dominio.Cliente.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente("Tsubasa", TipoCliente.PESSOA_FISICA);
-        Cliente cliente2 = new Cliente("Myamoto", TipoCliente.PESSOA_JURIDICA);
-        Cliente cliente3 = new Cliente("Shikamaru",TipoCliente.PESSOA_FISICA );
-        Cliente cliente4 = new Cliente("Atena", TipoCliente.PESSOA_JURIDICA);
+        Cliente cliente1 = new Cliente("Tsubasa", TipoCliente.PESSOA_FISICA, Cliente.TipoPagamento.DEBITO);
+        Cliente cliente2 = new Cliente("Myamoto", TipoCliente.PESSOA_JURIDICA, Cliente.TipoPagamento.CREDITO);
+        Cliente cliente3 = new Cliente("Shikamaru",TipoCliente.PESSOA_FISICA, Cliente.TipoPagamento.CREDITO );
+        Cliente cliente4 = new Cliente("Atena", TipoCliente.PESSOA_JURIDICA, Cliente.TipoPagamento.DEBITO);
 
         System.out.println(cliente1);
         System.out.println(cliente2);
