@@ -17,11 +17,11 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "nome= '" + nome + '\'' +
-                ", tipoCliente= " + tipoCliente +
-                ", tipoClienteInt= " + tipoCliente.VALOR +
-                ", tipoPagamento= " + tipoPagamento +
+        return "CLIENTE{" +
+                " NOME = '" + nome + '\'' +
+                ", TIPO CLIENTE = " + tipoCliente.getNomeRelatorio() +
+                ", TIPO CLIENTE INT = " + tipoCliente.getValor() +
+                ", TIPO PAGAMENTO = " + tipoPagamento +
                 '}';
     }
 }

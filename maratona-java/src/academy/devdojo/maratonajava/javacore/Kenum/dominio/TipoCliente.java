@@ -1,14 +1,22 @@
 package academy.devdojo.maratonajava.javacore.Kenum.dominio;
 
 public enum TipoCliente {
-    PESSOA_FISICA(1),
-    PESSOA_JURIDICA(2);
+    PESSOA_FISICA(1, "Pessoa Fisica"),
+    PESSOA_JURIDICA(2, "Pessoa Juridica");
 
-    public final int VALOR;
+    private int valor;
+    private String nomeRelatorio;
 
-    TipoCliente(int valor) {
-        this.VALOR = valor;
+    TipoCliente(int valor, String nomeRelatorio) {
+        this.valor = valor;
+        this.nomeRelatorio = nomeRelatorio;
     }
 
+    public int getValor() {
+        return valor;
+    }
 
+    public String getNomeRelatorio() {
+        return nomeRelatorio;
+    }
 }
