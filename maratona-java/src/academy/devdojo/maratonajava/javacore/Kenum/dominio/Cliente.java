@@ -18,9 +18,10 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente +
-                ", tipoPagamento=" + tipoPagamento +
+                "nome= '" + nome + '\'' +
+                ", tipoCliente= " + tipoCliente +
+                ", tipoClienteInt= " + tipoCliente.VALOR +
+                ", tipoPagamento= " + tipoPagamento +
                 '}';
     }
 }
