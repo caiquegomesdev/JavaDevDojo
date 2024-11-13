@@ -1,13 +1,13 @@
 package academy.devdojo.maratonajava.javacore.LclassesAbstratas.dominio;
 
-public class Gerente extends Funcionario {
-    public Gerente(String nome, double salario) {
+public class Desenvolvedor extends Funcionario{
+    public Desenvolvedor(String nome, double salario) {
         super(nome, salario);
     }
 
     @Override
     public String toString() {
-        return "Gerente{" +
+        return "Desenvolvedor{" +
                 "nome='" + nome + '\'' +
                 ", salario=" + salario +
                 '}';

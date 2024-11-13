@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.LclassesAbstratas.dominio;
 
-public class Funcionario {
+public abstract class Funcionario {
     protected String nome;
     protected double salario;
 
@@ -9,11 +9,4 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    @Override
-    public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", salario=" + salario +
-                '}';
-    }
 }
