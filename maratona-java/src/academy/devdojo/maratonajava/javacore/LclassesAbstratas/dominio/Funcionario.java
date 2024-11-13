@@ -10,8 +10,6 @@ public abstract class Funcionario {
         calculaBonus();
     }
 
-    public  void  calculaBonus(){
-        this.salario = salario + salario * 0.1;
-    }
+    public abstract void calculaBonus();
 
 }
