@@ -1,5 +1,5 @@
 package academy.devdojo.maratonajava.javacore.LclassesAbstratas.dominio;
 
-public class Pessoa {
-    public abstract void imprime(){}
+public abstract class Pessoa {
+    public abstract void imprime();
 }
