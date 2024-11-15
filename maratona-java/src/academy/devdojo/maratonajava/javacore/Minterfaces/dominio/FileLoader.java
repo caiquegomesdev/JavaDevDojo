@@ -10,4 +10,11 @@ public class FileLoader implements DataLoader,DataRemove {
     public void remove() {
         System.out.println("DELETANDO DADOS DE UM ARQUIVO");
     }
+    
+    @Override
+    public void checkPermission() {
+        System.out.println("CHECANDO PERMISSOES NO ARQUIVO");
+    }
+
+
 }

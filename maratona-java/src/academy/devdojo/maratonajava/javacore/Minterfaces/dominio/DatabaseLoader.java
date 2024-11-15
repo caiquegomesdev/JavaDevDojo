@@ -10,4 +10,9 @@ public class DatabaseLoader implements DataLoader, DataRemove{
     public void remove() {
         System.out.println("REMOVENDO DO BANCO DE DADOS");
     }
+
+    @Override
+    public void checkPermission() {
+        System.out.println("CHECANDO PERMISSOES NO BANCO DE DADOS");
+    }
 }
