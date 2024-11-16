@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Minterfaces.dominio;
 
 public class DatabaseLoader implements DataLoader, DataRemove{
+    //private -> default -> protected -> public
     @Override
     public void load() {
         System.out.println("CARREGANDO DADOS DO BANCO DE DADOS ...");
