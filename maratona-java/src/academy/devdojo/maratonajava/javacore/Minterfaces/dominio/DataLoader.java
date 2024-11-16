@@ -7,4 +7,8 @@ public interface DataLoader {
     public default void checkPermission(){
         System.out.println("FAZENDO CHECAGEM DE PERMISSOES");
     };
+
+    public  static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieveMaxDataSize na interface");
+    }
 }
