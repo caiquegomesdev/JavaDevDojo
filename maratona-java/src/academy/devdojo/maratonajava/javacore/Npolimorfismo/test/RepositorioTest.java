@@ -17,6 +17,10 @@ public class RepositorioTest {
         list.add("Goku");
         list.add("Shikamaru");
         list.add("Toiya");
+        list.add("Vegeta");
+        list.add("Endeavor");
+        list.add("Saitama");
+        list.add("Tsubasa");
         System.out.println(list);
     }
 }
