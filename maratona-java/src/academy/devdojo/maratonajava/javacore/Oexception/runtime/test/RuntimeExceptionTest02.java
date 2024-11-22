@@ -2,7 +2,11 @@ package academy.devdojo.maratonajava.javacore.Oexception.runtime.test;
 
 public class RuntimeExceptionTest02 {
     public static void main(String[] args) {
-        System.out.println( divisao(1,0));
+        try{
+            divisao(1,0);
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
     }
 
     private static int divisao(int a, int b){
