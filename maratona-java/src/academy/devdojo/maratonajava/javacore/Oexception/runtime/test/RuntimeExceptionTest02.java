@@ -8,6 +8,14 @@ public class RuntimeExceptionTest02 {
         System.out.println("Codigo Finalizado.");
     }
 
+    /**
+     *
+     * @param a
+     * @param b
+     * @return
+     * @throws IllegalArgumentException caso b seja zero
+     */
+
     private static int divisao(int a, int b) throws IllegalArgumentException{
         if(b == 0){
             throw new IllegalArgumentException("Argumento ilegal, não pode ser 0");
