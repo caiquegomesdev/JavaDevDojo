@@ -9,12 +9,7 @@ public class RuntimeExceptionTest02 {
         if(b == 0){
             throw new RuntimeException("Argumento ilegal, não pode ser 0");
         }
-        try{
-            return a/b;
-        } catch(RuntimeException e){
-            e.printStackTrace();
-        }
-        return 0;
+        return a/b;
 
     }
 }
