@@ -7,6 +7,7 @@ public class RuntimeExceptionTest02 {
         }catch (RuntimeException e){
             e.printStackTrace();
         }
+        System.out.println("Codigo Finalizado.");
     }
 
     private static int divisao(int a, int b){
