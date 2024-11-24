@@ -21,10 +21,10 @@ public class RuntimeExceptionTest04 {
 
         try {
             talvezLanceException();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
