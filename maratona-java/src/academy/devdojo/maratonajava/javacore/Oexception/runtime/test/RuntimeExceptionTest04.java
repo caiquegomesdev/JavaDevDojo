@@ -12,6 +12,8 @@ public class RuntimeExceptionTest04 {
             System.out.println("DENTRO DO IllegalArgumentException");
         }catch (ArithmeticException e){
             System.out.println("DENTRO DO ArithmeticException");
+        } catch (RuntimeException e){
+            System.out.println("DENTRO DO RuntimeException");
         }
 
     }
