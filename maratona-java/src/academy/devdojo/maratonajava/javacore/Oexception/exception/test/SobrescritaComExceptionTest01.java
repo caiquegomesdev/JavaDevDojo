@@ -13,7 +13,7 @@ public class SobrescritaComExceptionTest01 {
 
         try {
             funcionario.salvar();
-        } catch (LoginInvalidoException | FileNotFoundException e) {
+        } catch (LoginInvalidoException e) {
             throw new RuntimeException(e);
         }
     }
