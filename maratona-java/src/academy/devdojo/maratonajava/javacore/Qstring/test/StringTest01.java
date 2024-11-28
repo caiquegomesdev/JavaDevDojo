@@ -6,6 +6,9 @@ public class StringTest01 {
         String nome = "Gomes"; // String constant pool
         String nome2 = "Gomes";
 
+        nome = nome.concat( " Caique");
+
+        System.out.println(nome);
         System.out.println(nome == nome2);
 
     }
