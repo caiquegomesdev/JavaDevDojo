@@ -11,13 +11,13 @@ public class WrapperTest01 {
         char charP = 'W';
         boolean booleanP = false;
 
-        byte byteW = 1;
-        short shortW = 1;
-        int intW = 1;
-        long longW = 10L;
-        float floatW = 10F;
-        double doubleW = 10D;
-        char charW = 'W';
-        boolean booleanW = false;
+        Byte byteW = 1;
+        Short shortW = 1;
+        Integer intW = 1;
+        Long longW = 10L;
+        Float floatW = 10F;
+        Double doubleW = 10D;
+        Character charW = 'W';
+        Boolean booleanW = false;
     }
 }
