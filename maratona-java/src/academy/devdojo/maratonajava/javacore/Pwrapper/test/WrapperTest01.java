@@ -11,13 +11,15 @@ public class WrapperTest01 {
         char charP = 'W';
         boolean booleanP = false;
 
-        Byte byteW = 1;
+        Byte byteW = 127;
         Short shortW = 1;
-        Integer intW = 1;
+        Integer intW = 1; // autoboxing
         Long longW = 10L;
         Float floatW = 10F;
         Double doubleW = 10D;
         Character charW = 'W';
         Boolean booleanW = false;
+
+        int i = intW; // unboxing
     }
 }
