@@ -19,7 +19,7 @@ public class StringperformaceTest {
     }
     
     private static void concatString(int tamanho){
-        String texto = " ";
+        String texto = " Ola meu nome é Gomes. ";
         for (int i = 0; i < tamanho; i++) {
             texto +=i;
             
