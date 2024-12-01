@@ -3,9 +3,19 @@ package academy.devdojo.maratonajava.javacore.Qstring.test;
 public class StringperformaceTest {
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
-        concatString(100_000);
+        concatString(30_000);
         long fim = System.currentTimeMillis();
         System.out.println("Tempo gasto para String " +(inicio - fim) + "ms");
+
+        inicio = System.currentTimeMillis();
+        concatStringBuilder(1_000_000);
+        fim = System.currentTimeMillis();
+        System.out.println("Tempo gasto para StringBuilder " +(inicio - fim) + "ms");
+
+        inicio = System.currentTimeMillis();
+        concatStringBuffer(1_000_000);
+        fim = System.currentTimeMillis();
+        System.out.println("Tempo gasto para StringBuffer " +(inicio - fim) + "ms");
     }
     
     private static void concatString(int tamanho){
@@ -20,6 +30,14 @@ public class StringperformaceTest {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < tamanho; i++) {
             sb.append(i);
+
+        }
+    }
+
+    private static void concatStringBuffer(int tamanho){
+        StringBuffer sbf = new StringBuffer();
+        for (int i = 0; i < tamanho; i++) {
+            sbf.append(i);
 
         }
     }
