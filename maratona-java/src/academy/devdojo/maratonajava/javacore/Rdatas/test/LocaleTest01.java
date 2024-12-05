@@ -24,6 +24,9 @@ public class LocaleTest01 {
         System.out.println("India " + df3.format(calendar.getTime()));
         System.out.println("Japao " + df4.format(calendar.getTime()));
         System.out.println("Holanda " + df5.format(calendar.getTime()));
+
+        System.out.println(localeItaly.getDisplayCountry());
+        System.out.println(localeCH.getDisplayCountry());
     }
 
 
