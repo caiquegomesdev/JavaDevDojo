@@ -18,6 +18,7 @@ public class NumberFormatTest02 {
 
         double valor = 10_000.2130;
         for (NumberFormat numberFormat : nfa) {
+            System.out.println(numberFormat.getMaximumFractionDigits());
             System.out.println(numberFormat.format(valor));
         }
 
