@@ -17,10 +17,10 @@ public class NumberFormatTest02 {
         nfa[2] = NumberFormat.getCurrencyInstance(localePT);
         nfa[3] = NumberFormat.getCurrencyInstance(localeIT);
 
-        double valor = 1_000.2130;
+        double valor = 100_000_000.2130;
         for (NumberFormat numberFormat : nfa) {
-            //System.out.println(numberFormat.getMaximumFractionDigits());
-            numberFormat.setMaximumFractionDigits(2);
+            System.out.println(numberFormat.getMaximumFractionDigits());
+            //numberFormat.setMaximumFractionDigits(2);
             System.out.println(numberFormat.format(valor));
         }
         String valorString = "1_000.2130";
