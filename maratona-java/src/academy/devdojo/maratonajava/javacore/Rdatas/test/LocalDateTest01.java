@@ -21,5 +21,6 @@ public class LocalDateTest01 {
         System.out.println(date.isLeapYear());
         System.out.println(date.get(ChronoField.YEAR));
         System.out.println(date.get(ChronoField.DAY_OF_MONTH));
+        System.out.println(date);
     }
 }
