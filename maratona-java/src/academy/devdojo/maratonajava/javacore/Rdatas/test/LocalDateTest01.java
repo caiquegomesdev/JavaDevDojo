@@ -11,6 +11,7 @@ public class LocalDateTest01 {
         System.out.println(new Date());
         System.out.println(Calendar.getInstance());
         System.out.println(Month.JANUARY.getValue());
+        LocalDate agora = LocalDate.now();
         LocalDate date = LocalDate.of(2025, Month.JANUARY, 01);
         System.out.println(date.getYear());
         System.out.println(date.getMonth());
@@ -22,5 +23,6 @@ public class LocalDateTest01 {
         System.out.println(date.get(ChronoField.YEAR));
         System.out.println(date.get(ChronoField.DAY_OF_MONTH));
         System.out.println(date);
+        System.out.println(agora);
     }
 }
