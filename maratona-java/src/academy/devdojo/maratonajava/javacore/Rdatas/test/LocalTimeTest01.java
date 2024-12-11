@@ -15,6 +15,7 @@ public class LocalTimeTest01 {
         System.out.println(time.getSecond());
         System.out.println(time.get(ChronoField.CLOCK_HOUR_OF_AMPM));
 
+        System.out.println(LocalTime.MIDNIGHT);
         
     }
 }
