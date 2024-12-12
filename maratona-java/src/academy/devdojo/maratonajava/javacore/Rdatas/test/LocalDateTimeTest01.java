@@ -13,6 +13,9 @@ public class LocalDateTimeTest01 {
         System.out.println(localDateTime);
         System.out.println(date);
         System.out.println(time);
-
+        LocalDateTime ldt1 = date.atTime(time);
+        LocalDateTime ldt2 = time.atDate(date);
+        System.out.println(ldt1);
+        System.out.println(ldt2);
     }
 }
