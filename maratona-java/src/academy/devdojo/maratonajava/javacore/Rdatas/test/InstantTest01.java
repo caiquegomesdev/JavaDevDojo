@@ -9,5 +9,8 @@ public class InstantTest01 {
         Instant now = Instant.now();
         System.out.println(now);
         System.out.println(LocalDateTime.now());
+        System.out.println(now.getEpochSecond());
+        System.out.println(now.getNano());
+        
     }
 }
