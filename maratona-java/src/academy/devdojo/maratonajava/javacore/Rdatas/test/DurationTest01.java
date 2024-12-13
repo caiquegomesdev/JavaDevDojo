@@ -14,9 +14,11 @@ public class DurationTest01 {
         Duration d1 = Duration.between(now, nowAfterTwoYears);
         Duration d2 = Duration.between(timeNow, timeMinus7Hours);
         Duration d3 = Duration.between(Instant.now(), Instant.now().plusSeconds(1000) );
+        Duration d4 = Duration.ofDays(20);
         System.out.println(d1);
         System.out.println(d2);
         System.out.println(d3);
+        System.out.println(d4);
 
     }
 }
