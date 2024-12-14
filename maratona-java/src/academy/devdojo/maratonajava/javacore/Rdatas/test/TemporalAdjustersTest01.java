@@ -13,8 +13,18 @@ public class TemporalAdjustersTest01 {
         System.out.println(now);
         System.out.println(now.getDayOfWeek());
 
-        now = LocalDate.now().with(TemporalAdjusters.nextOrSame(DayOfWeek.THURSDAY));
+        now = LocalDate.now().with(TemporalAdjusters.nextOrSame(DayOfWeek.MONDAY));
         System.out.println(now);
         System.out.println(now.getDayOfWeek());
+
+        now = LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+        System.out.println(now);
+        System.out.println(now.getDayOfWeek());
+
+        now = LocalDate.now().with(TemporalAdjusters.previous(DayOfWeek.MONDAY));
+        System.out.println(now);
+        System.out.println(now.getDayOfWeek());
+
+
     }
 }
