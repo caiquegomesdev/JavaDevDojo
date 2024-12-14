@@ -37,6 +37,10 @@ public class TemporalAdjustersTest01 {
         System.out.println(now);
         System.out.println(now.getDayOfWeek());
 
+        now = LocalDate.now().with(TemporalAdjusters.firstDayOfNextMonth());
+        System.out.println(now);
+        System.out.println(now.getDayOfWeek());
+
 
 
 
