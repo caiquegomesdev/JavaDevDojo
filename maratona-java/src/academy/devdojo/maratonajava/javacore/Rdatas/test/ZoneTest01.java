@@ -25,7 +25,10 @@ public class ZoneTest01 {
         System.out.println(ZoneOffset.MAX);
 
         ZoneOffset offsetManaus = ZoneOffset.of("-04:00");
-        OffsetDateTime offsetDateTime = now.atOffset(offsetManaus);
-        System.out.println(offsetDateTime);
+        OffsetDateTime offsetDateTime1 = now.atOffset(offsetManaus);
+        System.out.println(offsetDateTime1);
+
+        OffsetDateTime offsetDateTime2 = OffsetDateTime.of(now,offsetManaus);
+        System.out.println(offsetDateTime2);
     }
 }
