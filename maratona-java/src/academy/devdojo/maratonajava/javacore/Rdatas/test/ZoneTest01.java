@@ -11,7 +11,8 @@ public class ZoneTest01 {
         System.out.println(ZoneId.systemDefault());
         ZoneId tokyoZone= ZoneId.of("Asia/Tokyo");
         System.out.println(tokyoZone);
-        
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
 
     }
 }
