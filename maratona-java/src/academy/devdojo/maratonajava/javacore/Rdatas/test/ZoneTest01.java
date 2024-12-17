@@ -1,9 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.util.Map;
 
 public class ZoneTest01 {
@@ -24,5 +21,11 @@ public class ZoneTest01 {
         ZonedDateTime zonedDateTime2 = nowInstant.atZone(tokyoZone);
         System.out.println(zonedDateTime2);
 
+        System.out.println(ZoneOffset.MIN);
+        System.out.println(ZoneOffset.MAX);
+
+        ZoneOffset offsetManaus = ZoneOffset.of("-04:00");
+        OffsetDateTime offsetDateTime = now.atOffset(offsetManaus);
+        System.out.println(offsetDateTime);
     }
 }
