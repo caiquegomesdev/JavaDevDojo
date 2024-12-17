@@ -9,6 +9,8 @@ public class ZoneTest01 {
         Map<String, String> shortIds = ZoneId.SHORT_IDS;
         System.out.println(shortIds);
         System.out.println(ZoneId.systemDefault());
+        ZoneId tokyoZone= ZoneId.of("Asia/Tokyo");
+        System.out.println(tokyoZone);
         
 
     }
