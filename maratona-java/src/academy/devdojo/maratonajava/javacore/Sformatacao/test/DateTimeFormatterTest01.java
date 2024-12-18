@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Sformatacao.test;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatterTest01 {
@@ -21,5 +22,9 @@ public class DateTimeFormatterTest01 {
         System.out.println(parse1);
         System.out.println(parse2);
         System.out.println(parse3);
+
+        LocalDateTime now = LocalDateTime.now();
+        String s4 = now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        System.out.println(s4);
     }
 }
