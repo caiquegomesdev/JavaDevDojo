@@ -26,5 +26,13 @@ public class DateTimeFormatterTest01 {
         LocalDateTime now = LocalDateTime.now();
         String s4 = now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         System.out.println(s4);
+        LocalDateTime parse4 = LocalDateTime.parse("2024-12-17T22:44:45.021475", DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println(parse4);
+        //dd/MM/yyyy
+        //MM/dd/yyyy
+        //yyyy/MM/dd
+        DateTimeFormatter formatterBR = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String formatBR = LocalDate.now().format(formatterBR);
+        System.out.println(formatBR);
     }
 }
