@@ -15,7 +15,7 @@ public class DateTimeFormatterTest01 {
         System.out.println(s3);
 
         LocalDate parse1 = LocalDate.parse("20241217", DateTimeFormatter.BASIC_ISO_DATE);
-        LocalDate parse2 = LocalDate.parse("2024-12-17", DateTimeFormatter.ISO_DATE);
+        LocalDate parse2 = LocalDate.parse("2024-12-17+05:00", DateTimeFormatter.ISO_DATE);
         LocalDate parse3 = LocalDate.parse("2024-12-17", DateTimeFormatter.ISO_LOCAL_DATE);
 
         System.out.println(parse1);
