@@ -10,5 +10,9 @@ public class ResourceBundleTest01 {
 
         System.out.println( bundle.getString("hello") );
         System.out.println( bundle.getString("good.morning") );
+
+        bundle = ResourceBundle.getBundle("messages", new Locale("pt","BR"));
+        System.out.println( bundle.getString("hello") );
+        System.out.println( bundle.getString("good.morning") );
     }
 }
