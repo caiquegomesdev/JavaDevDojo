@@ -8,6 +8,7 @@ public class ResourceBundleTest01 {
         System.out.println(Locale.getDefault());
        ResourceBundle bundle = ResourceBundle.getBundle("messages", new Locale("en","US"));
 
-        
+        System.out.println( bundle.getString("hello") );
+        System.out.println( bundle.getString("good.morning") );
     }
 }
