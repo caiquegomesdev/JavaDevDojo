@@ -10,10 +10,10 @@ public class PatternMatcherTest02 {
         // \s = Espacos em branco \t \n \f \r
         // \S = Todos os caracters excluindo os brancos
         // \w = a-ZA-Z, digitos, _
-        // \w = 
-        String regex = "\\s";
+        // \W = Tudo o que nao for incluso no \w
+        String regex = "\\w";
         //String texto = "abaaba";
-        String texto2 = "a23@n%67t0";
+        String texto2 = "a23@\n%67t0";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto2);
 
