@@ -5,9 +5,15 @@ import java.util.regex.Pattern;
 
 public class PatternMatcherTest02 {
     public static void main(String[] args) {
-        String regex = "\\d";
+        // \d = Todos os digitos
+        // \D = Tudo que nao for digito
+        // \s = Espacos em branco \t \n \f \r
+        // \S = Todos os caracters excluindo os brancos
+        // \w = a-ZA-Z, digitos, _
+        // \w = 
+        String regex = "\\s";
         //String texto = "abaaba";
-        String texto2 = "djkfsgahkjg2345kljjfksej5h431l2k";
+        String texto2 = "a23@n%67t0";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto2);
 
