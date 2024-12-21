@@ -13,7 +13,7 @@ public class PatternMatcherTest03 {
         // \W = Tudo o que nao for incluso no \w
         // []
         //String regex = "[a-zA-C]";
-        String regex = "0[xX] 0[0-9a-fA-F]";
+        String regex = "0[xX][0-9a-fA-F]";
         //String texto = "abaaba";
         String texto2 = "12 0x 0x 0xFFABC 0x109 0x1";
         Pattern pattern = Pattern.compile(regex);
@@ -26,7 +26,7 @@ public class PatternMatcherTest03 {
         while (matcher.find()){
             System.out.print(matcher.start()+ " " +matcher.group()+"\n");
         }
-        
+
 
     }
 }
