@@ -17,6 +17,7 @@ public class PatternMatcherTest03 {
         //String texto = "abaaba";
         String texto2 = "12 0x 0x 0xFFABC 0x109 0x1";
         Pattern pattern = Pattern.compile(regex);
+        //Matcher matcher = pattern.matcher(texto2);
         Matcher matcher = pattern.matcher(texto2);
 
         System.out.println("texto:  " + texto2);
