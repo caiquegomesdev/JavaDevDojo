@@ -19,7 +19,7 @@ public class PatternMatcherTest04 {
         // ()
         // | o(v|c)o ovo | oco
         // $
-        String regex = "0[xX]([0-9a-fA-F])+\\s";
+        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
         String texto2 = "12 0x 0x 0xFFABC 0x109 0x1";
         Pattern pattern = Pattern.compile(regex);
         //Matcher matcher = pattern.matcher(texto2);
