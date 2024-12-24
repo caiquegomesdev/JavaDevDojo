@@ -1,5 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Uregex.test;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,9 +22,10 @@ public class PatternMatcherTest05 {
         // $
         // . 1.3 = 123, 133, 1@3, 1A3
         String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z])+";
-        String texto = "Caiquegomesdev@gmail.com, 123jotaro@gmail.com, #@!zoro@gmail.com, teste@gmail.com, sukuna@mail ";
+        String texto = "Caiquegomesdev@gmail.com, 123jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com, sukuna@mail ";
         System.out.println("EMAIL VALIDO");
-        System.out.println("#@!zoro@gmail.com".matches(regex));
+        System.out.println("#@!zoro@mail.br".matches(regex));
+        System.out.println(Arrays.toString(texto.split(",")));
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
