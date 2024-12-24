@@ -20,7 +20,7 @@ public class PatternMatcherTest05 {
         // | o(v|c)o ovo | oco
         // $
         // . 1.3 = 123, 133, 1@3, 1A3
-        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
+        String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z])+";
         String texto = "Caiquegomesdev@gmail.com, 123jotaro@gmail.com, #@!zoro@gmail.com, teste@gmail.com, sukuna@mail ";
         Pattern pattern = Pattern.compile(regex);
         //Matcher matcher = pattern.matcher(texto2);
