@@ -25,7 +25,7 @@ public class PatternMatcherTest05 {
         String texto = "Caiquegomesdev@gmail.com, 123jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com, sukuna@mail ";
         System.out.println("EMAIL VALIDO");
         System.out.println("#@!zoro@mail.br".matches(regex));
-        System.out.println(Arrays.toString(texto.split(",")));
+        System.out.println(texto.split(",")[1].trim());
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
