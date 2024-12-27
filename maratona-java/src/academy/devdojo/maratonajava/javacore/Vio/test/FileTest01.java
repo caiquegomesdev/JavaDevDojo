@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Vio.test;
 import java.io.File;
 import java.io.IOException;
 import java.time.Instant;
+import java.time.ZoneId;
 import java.util.Date;
 
 public class FileTest01 {
@@ -18,7 +19,7 @@ public class FileTest01 {
             System.out.println("is file " + file.isFile());
             System.out.println("is hidden " + file.isHidden());
             System.out.println("last modified " + new Date( file.lastModified() ) );
-            System.out.println("last modified " + Instant.ofEpochMilli( file.lastModified() ) );
+            System.out.println("last modified " + Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()) );
 
 
             boolean exists = file.exists();
