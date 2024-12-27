@@ -14,7 +14,8 @@ public class FileTest01 {
             System.out.println("path absolute " + file.getAbsolutePath());
             System.out.println("is directory " + file.isDirectory());
             System.out.println("is file " + file.isFile());
-            System.out.println("is file " + file.isFile());
+            System.out.println("is hidden " + file.isHidden());
+
 
             boolean exists = file.exists();
             if (exists) {
