@@ -10,6 +10,9 @@ public class FileTest01 {
 
             boolean isCreated = file.createNewFile();
             System.out.println("Created " +isCreated);
+            System.out.println("path " + file.getPath());
+            System.out.println("path absolute " + file.getAbsolutePath());
+
             boolean exists = file.exists();
             if (exists) {
                 System.out.println("Deleted " + file.delete());
