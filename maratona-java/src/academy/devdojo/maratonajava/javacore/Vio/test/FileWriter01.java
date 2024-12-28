@@ -14,10 +14,9 @@ import java.io.IOException;
 public class FileWriter01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
-        try {
-            FileWriter fw = new FileWriter(file);
+        try (FileWriter fw = new FileWriter(file)) {
             fw.write("Caique Gomes é o melhor dev do Brasil");
-            
+            fw.flush();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
