@@ -11,7 +11,7 @@ import java.io.IOException;
 //BufferedReader
 
 
-public class FileWriter01 {
+public class FileWriterTes01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try (FileWriter fw = new FileWriter(file, true)) {
