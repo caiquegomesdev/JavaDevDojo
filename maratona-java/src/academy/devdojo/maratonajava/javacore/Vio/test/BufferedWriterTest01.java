@@ -11,7 +11,9 @@ public class BufferedWriterTest01 {
         try (FileWriter fw = new FileWriter(file, true);
              BufferedWriter br = new BufferedWriter(fw)) {
             fw.write("Caique Gomes é o melhor dev do Brasil\n continuando...");
+            br.newLine();
             fw.flush();
+
         } catch (IOException ex) {
             ex.printStackTrace();
         }
