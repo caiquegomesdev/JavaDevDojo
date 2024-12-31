@@ -9,7 +9,7 @@ public class FileTest02 {
         File fileDiretorio = new File("pasta");
         boolean isDiretorioCreated = fileDiretorio.mkdir();
         System.out.println(isDiretorioCreated);
-        File fileArquivoDiretorio = new File("C:\\Users\\Administrator\\Documents\\CursoDevDojo(MaratonaDevJAVA)\\maratona-java\\pasta\\arquivo.txt");
+        File fileArquivoDiretorio = new File(fileDiretorio, "arquivo.txt");
         boolean isFileCreated = fileArquivoDiretorio.createNewFile();
         System.out.println(isFileCreated);
     }
