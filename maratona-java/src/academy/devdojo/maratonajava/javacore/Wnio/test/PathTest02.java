@@ -11,6 +11,9 @@ public class PathTest02 {
         if (Files.notExists(pastaPath)) {
             Path pastaDirectory = Files.createDirectory(pastaPath);
         }
-        
+        Path subPastaPath = Paths.get("pasta/subpasta/subsubpasta");
+        Path subPastaDirectory = Files.createDirectories(subPastaPath);
+        Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
+        Path filePathCreated = Files.createFile(filePath);
     }
 }
