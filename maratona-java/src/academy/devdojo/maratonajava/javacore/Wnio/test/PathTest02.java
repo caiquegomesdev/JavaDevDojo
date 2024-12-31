@@ -14,6 +14,13 @@ public class PathTest02 {
         Path subPastaPath = Paths.get("pasta/subpasta/subsubpasta");
         Path subPastaDirectory = Files.createDirectories(subPastaPath);
         Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
-        Path filePathCreated = Files.createFile(filePath);
+        if (Files.notExists(filePath)) {
+            Path filePathCreated = Files.createFile(filePath);
+        }
+
+        Path source = filePath;
+        Path target = Paths.get(filePath.toString(),"file_renamed.txt");
+        Files.copy(source,target);
+        
     }
 }
