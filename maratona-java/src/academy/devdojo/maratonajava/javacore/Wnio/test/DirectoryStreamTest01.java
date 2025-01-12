@@ -8,9 +8,11 @@ import java.nio.file.Paths;
 
 public class DirectoryStreamTest01 {
     public static void main(String[] args) {
-        Path path = Paths.get("maratona-java");
-        try(DirectoryStream<Path> stream = Files.newDirectoryStream()){
-
+        Path dir = Paths.get("maratona-java");
+        try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)){
+            for(Path path: stream){
+                System.out.println(path.getFileName());
+            }
         }catch (IOException e){
             e.printStackTrace();
         }
