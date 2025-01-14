@@ -8,7 +8,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 class ListAllFiles extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-        System.out.println(file.getFileName());
+        if(file.getFileName().toString().endsWith(".java")) {
+            System.out.println(file.getFileName());
+        }
         return FileVisitResult.CONTINUE;
     }
 }
