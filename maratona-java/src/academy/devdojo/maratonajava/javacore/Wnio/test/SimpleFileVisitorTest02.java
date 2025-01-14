@@ -3,9 +3,17 @@ package academy.devdojo.maratonajava.javacore.Wnio.test;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.sql.SQLOutput;
 
 
 class ListAllFiles extends SimpleFileVisitor<Path> {
+    @Override
+    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
+        System.out.println(file.getFileName());
+        return FileVisitResult.CONTINUE;
+
+    }
+
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
         System.out.println("Pre visit " + dir.getFileName());
@@ -19,17 +27,10 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 
     @Override
     public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-        return super.postVisitDirectory(dir, exc);
-    }
-
-    @Override
-    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-        if(file.getFileName().toString().endsWith(".java")) {
-            System.out.println(file.getFileName());
-        }
+        System.out.println("Post visit " + dir.getFileName());
         return FileVisitResult.CONTINUE;
-
     }
+
 }
 
 public class SimpleFileVisitorTest02 {
