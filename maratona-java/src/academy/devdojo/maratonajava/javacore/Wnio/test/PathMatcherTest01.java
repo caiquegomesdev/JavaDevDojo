@@ -12,6 +12,9 @@ public class PathMatcherTest01 {
         matches(path1,"glob:**/*.{bkp,txt,java}");
         matches(path2,"glob:**/*.{bkp,txt,java}");
         matches(path3,"glob:**/*.{bkp,txt,java}");
+        matches(path1,"glob:**/*.???");
+        matches(path2,"glob:**/*.???");
+        matches(path3,"glob:**/*.???");
     }
     private static void matches(Path path, String glob){
         PathMatcher matcher = FileSystems.getDefault().getPathMatcher(glob);
