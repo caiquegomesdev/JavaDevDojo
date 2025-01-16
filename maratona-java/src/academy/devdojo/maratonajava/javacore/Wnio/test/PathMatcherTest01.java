@@ -15,6 +15,9 @@ public class PathMatcherTest01 {
         matches(path1,"glob:**/*.???");
         matches(path2,"glob:**/*.???");
         matches(path3,"glob:**/*.???");
+        matches(path1,"glob:**/*.???");
+        matches(path2,"glob:**/*.???");
+        matches(path3,"glob:**/*.???");
     }
     private static void matches(Path path, String glob){
         PathMatcher matcher = FileSystems.getDefault().getPathMatcher(glob);
