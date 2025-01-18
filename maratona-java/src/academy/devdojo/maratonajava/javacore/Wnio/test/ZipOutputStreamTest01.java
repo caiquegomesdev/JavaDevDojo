@@ -15,7 +15,9 @@ public class ZipOutputStreamTest01 {
     private  static void zip(Path arquivoZip, Path arquivosParaZipar){
         try(ZipOutputStream zipStream = new ZipOutputStream(Files.newOutputStream(arquivoZip));
             DirectoryStream<Path> directoryStream = Files.newDirectoryStream(arquivosParaZipar)){
-            
+            for(Path file: directoryStream ){
+                System.out.println(file.getFileName());
+            }
         }catch (IOException e){
             e.printStackTrace();
         }
