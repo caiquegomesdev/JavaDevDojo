@@ -5,6 +5,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class ZipOutputStreamTest01 {
@@ -16,8 +17,11 @@ public class ZipOutputStreamTest01 {
         try(ZipOutputStream zipStream = new ZipOutputStream(Files.newOutputStream(arquivoZip));
             DirectoryStream<Path> directoryStream = Files.newDirectoryStream(arquivosParaZipar)){
             for(Path file: directoryStream ){
-                System.out.println(file.getFileName());
+                ZipEntry zipEntry = new ZipEntry(file.getFileName().toString());
+                zipStream.putNextEntry(zipEntry);
+                zipStream.closeEntry();
             }
+            System.out.println("Arquivo criado com sucesso!");
         }catch (IOException e){
             e.printStackTrace();
         }
