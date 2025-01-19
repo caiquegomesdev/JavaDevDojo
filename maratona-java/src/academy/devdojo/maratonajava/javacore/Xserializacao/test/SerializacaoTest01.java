@@ -14,7 +14,7 @@ public class SerializacaoTest01 {
         serializar(aluno);
     }
     private  static void serializar(Aluno aluno){
-        Path path = Paths.get("aluno.ser");
+        Path path = Paths.get("pasta/aluno.ser");
         try(ObjectOutputStream oos = new  ObjectOutputStream(Files.newOutputStream(path))){
             oos.writeObject(aluno);
         }catch (IOException e){
