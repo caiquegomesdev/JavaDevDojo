@@ -1,6 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
-public class Aluno {
+import java.io.Serializable;
+
+public class Aluno implements Serializable {
     private Long id;
     private String nome;
     private String password;
