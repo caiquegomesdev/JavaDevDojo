@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 public class SerializacaoTest01 {
     public static void main(String[] args) {
         Aluno aluno = new Aluno(1L, "Caique Gomes", "gomes123.2025");
-        //serializar(aluno);
+        serializar(aluno);
         deserializar();
     }
     private  static void serializar(Aluno aluno){

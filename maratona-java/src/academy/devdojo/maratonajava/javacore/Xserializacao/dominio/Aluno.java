@@ -1,11 +1,15 @@
 package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class Aluno implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 739959230178355185L;
+
     private Long id;
     private String nome;
-    private String password;
+    private transient String password;
 
     public Aluno(Long id, String nome, String password) {
         this.id = id;
