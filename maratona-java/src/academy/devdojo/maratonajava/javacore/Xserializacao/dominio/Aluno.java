@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
-import java.io.Serial;
-import java.io.Serializable;
+import java.io.*;
 
 public class Aluno implements Serializable {
     @Serial
@@ -12,12 +11,33 @@ public class Aluno implements Serializable {
     private transient String password;
     private  static String nomeEscola = "DevelopersCommunity";
     private transient Turma turma;
+
     public Aluno(Long id, String nome, String password) {
         System.out.println("Dentro do construtor");
         this.id = id;
         this.nome = nome;
         this.password = password;
     }
+
+    @Serial
+    private void writeObject(ObjectOutputStream oss){
+        try {
+            oss.defaultWriteObject();
+            oss.writeUTF(turma.getNome());
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    };
+    @Serial
+    private void readObject(ObjectInputStream ois){
+        try {
+            ois.defaultReadObject();
+            String nomeTurma = ois.readUTF();
+            turma = new Turma(nomeTurma);
+        }catch (IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+    };
 
     @Override
     public String toString() {
