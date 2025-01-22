@@ -11,8 +11,9 @@ public class Aluno implements Serializable {
     private String nome;
     private transient String password;
     private  static String nomeEscola = "DevelopersCommunity";
-
+    private Turma turma;
     public Aluno(Long id, String nome, String password) {
+        System.out.println("Dentro do construtor");
         this.id = id;
         this.nome = nome;
         this.password = password;
