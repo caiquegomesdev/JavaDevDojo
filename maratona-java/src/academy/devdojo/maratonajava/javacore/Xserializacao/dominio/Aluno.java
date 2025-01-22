@@ -11,7 +11,7 @@ public class Aluno implements Serializable {
     private String nome;
     private transient String password;
     private  static String nomeEscola = "DevelopersCommunity";
-    private Turma turma;
+    private transient Turma turma;
     public Aluno(Long id, String nome, String password) {
         System.out.println("Dentro do construtor");
         this.id = id;
@@ -26,8 +26,17 @@ public class Aluno implements Serializable {
                 ", nome='" + nome + '\'' +
                 ", password='" + password + '\'' +
                 ", nomeEscola='" + nomeEscola + '\'' +
+                ", Turma='" + turma + '\'' +
 
                 '}';
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 
     public Long getId() {
