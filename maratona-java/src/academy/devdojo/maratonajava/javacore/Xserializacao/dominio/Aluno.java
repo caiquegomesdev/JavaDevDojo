@@ -10,6 +10,7 @@ public class Aluno implements Serializable {
     private Long id;
     private String nome;
     private transient String password;
+    private  static String nomeEscola = "DevelopersCommunity";
 
     public Aluno(Long id, String nome, String password) {
         this.id = id;
@@ -23,6 +24,8 @@ public class Aluno implements Serializable {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", password='" + password + '\'' +
+                ", nomeEscola='" + nomeEscola + '\'' +
+
                 '}';
     }
 
