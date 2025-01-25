@@ -15,6 +15,7 @@ public class Smartphone {
         if(this == obj) return true;
         if(this.getClass() != obj.getClass()) return false;
         Smartphone smartphone = (Smartphone) obj;
+        return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
     }
 
     public String getSerialNumber() {
