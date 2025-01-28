@@ -8,9 +8,9 @@ public class ListTest01 {
         List<String> nomes = new ArrayList<>();
         nomes.add("Gomes");
         nomes.add("Desenvolvedor Java");
-        
 
-        for(Object nome: nomes){
+
+        for(String nome: nomes){
             System.out.println(nome);
         }
     }
