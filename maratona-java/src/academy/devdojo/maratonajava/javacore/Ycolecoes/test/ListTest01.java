@@ -8,6 +8,7 @@ public class ListTest01 {
         List<String> nomes = new ArrayList<>(16);
         nomes.add("Caique Gomes");
         nomes.add("Desenvolvedor Java");
+        System.out.println(nomes.remove("Caique") );
 
 
         for(String nome: nomes){
@@ -22,5 +23,10 @@ public class ListTest01 {
             nomes.add("Fullstack");
         }
         System.out.println(nomes);
+        System.out.println("-----------------");
+
+        List<Integer> numeros = new ArrayList<>();
+        numeros.add(1);
+
     }
 }
