@@ -16,8 +16,11 @@ public class ListTest01 {
         nomes.add("Fullstack");
         System.out.println("-----------------");
 
-        for (int i = 0; i < nomes.size() ; i++) {
+        int size = nomes.size();
+        for (int i = 0; i < size; i++) {
             System.out.println(nomes.get(i));
+            nomes.add("Fullstack");
         }
+        System.out.println(nomes);
     }
 }
