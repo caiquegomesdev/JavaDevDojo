@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.test;
 
+import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -34,6 +36,6 @@ public class ListSortTest01 {
         Collections.sort(dinheiros);
         System.out.println(dinheiros);
 
-
+        new Manga(null, null, 0);
     }
 }
