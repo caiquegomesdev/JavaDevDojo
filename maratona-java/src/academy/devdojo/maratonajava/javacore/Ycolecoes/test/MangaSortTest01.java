@@ -19,5 +19,9 @@ public class MangaSortTest01 {
         mangas.add(new Manga(12L,"Dandadan",15.0));
         mangas.add(new Manga(11L,"Mob psycho 100",10.0));
         mangas.add(new Manga(13L,"One piece",20.9));
+
+        for(Manga manga : mangas ){
+            System.out.println(manga);
+        }
     }
 }
