@@ -17,14 +17,15 @@ public class MangaSortTest01 {
         mangas.add(new Manga(8L,"Cowboy bebop",12.5));
         mangas.add(new Manga(7L,"Akira",20.9));
         mangas.add(new Manga(10L,"One punchman",10.0));
-        mangas.add(new Manga(12L,"Dandadan",15.0));
-        mangas.add(new Manga(11L,"Mob psycho 100",10.0));
-        mangas.add(new Manga(13L,"One piece",20.9));
+        mangas.add(new Manga(9L,"Dandadan",15.0));
+        mangas.add(new Manga(2L,"Mob psycho 100",10.0));
+        mangas.add(new Manga(11L,"One piece",20.9));
 
         for(Manga manga : mangas ){
             System.out.println(manga);
         }
         Collections.sort(mangas);
+        System.out.println("---------------------------------------");
         for(Manga manga : mangas ){
             System.out.println(manga);
         }
