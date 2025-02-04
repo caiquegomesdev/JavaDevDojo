@@ -38,8 +38,7 @@ public class MangaSortTest01 {
         for(Manga manga : mangas ){
             System.out.println(manga);
         }
-
-        Collections.sort(mangas, new MangaByIdComparator());
+        mangas.sort(new MangaByIdComparator());
         System.out.println("---------------------------------------");
         for(Manga manga : mangas ){
             System.out.println(manga);
