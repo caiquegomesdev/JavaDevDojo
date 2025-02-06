@@ -8,6 +8,7 @@ import java.util.List;
 
 public class BinarySeachTest01 {
     public static void main(String[] args) {
+        MangaByIdComparator mangaByIdComparator = new MangaByIdComparator();
         List<Manga> mangas = new ArrayList<>(13);
         mangas.add(new Manga(5L,"Attack on titan",19.9));
         mangas.add(new Manga(3L,"Villand Saga",9.5));
@@ -21,13 +22,14 @@ public class BinarySeachTest01 {
         mangas.add(new Manga(2L,"Mob psycho 100",10.0));
         mangas.add(new Manga(11L,"One piece",20.9));
 
-        Collections.sort(mangas);
+        //Collections.sort(mangas);
+        mangas.sort(mangaByIdComparator);
         for(Manga manga : mangas ){
             System.out.println(manga);
         }
 
         Manga mangaToSearch  = new Manga(11L,"One piece",20.9);
-        System.out.println(Collections.binarySearch(mangas, mangaToSearch));
+        System.out.println(Collections.binarySearch(mangas, mangaToSearch, mangaByIdComparator));
 
     }
 }
