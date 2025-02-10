@@ -20,10 +20,6 @@ public class IteratorTest01 {
         mangas.add(new Manga(2L,"Mob psycho 100",10.0));
         mangas.add(new Manga(11L,"One piece",20.9));
 
-        for (Manga manga: mangas){
-            if(manga.getQuantidade() == 0){
-                mangas.remove(manga);
-            }
-        }
+       
     }
 }
