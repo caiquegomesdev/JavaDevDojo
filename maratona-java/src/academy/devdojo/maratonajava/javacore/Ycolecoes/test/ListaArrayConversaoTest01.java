@@ -21,6 +21,7 @@ public class ListaArrayConversaoTest01 {
         numerosArray[2] = 3;
 
         List<Integer> arrayToList = Arrays.asList(numerosArray);
+        arrayToList.set(0,12);
         System.out.println(Arrays.toString(numerosArray));
         System.out.println(arrayToList);
     }
