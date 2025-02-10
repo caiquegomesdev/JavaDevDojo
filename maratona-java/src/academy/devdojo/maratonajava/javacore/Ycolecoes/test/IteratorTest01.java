@@ -21,14 +21,15 @@ public class IteratorTest01 {
         mangas.add(new Manga(2L,"Mob psycho 100",10.0));
         mangas.add(new Manga(11L,"One piece",20.9));
 
-        Iterator<Manga> mangaIterator = mangas.iterator();
-        while (mangaIterator.hasNext()){
-            Manga manga = mangaIterator.next();
-            if (manga.getQuantidade() == 0){
-                mangaIterator.remove();
-            }
-        }
-
+//        Iterator<Manga> mangaIterator = mangas.iterator();
+//        while (mangaIterator.hasNext()){
+//            Manga manga = mangaIterator.next();
+//            if (manga.getQuantidade() == 0){
+//                mangaIterator.remove();
+//            }
+//        }
+        
+        mangas.removeIf(manga -> manga.getQuantidade() == 0);
         System.out.println(mangas);
     }
 }
