@@ -24,5 +24,13 @@ public class ListaArrayConversaoTest01 {
         arrayToList.set(0,12);
         System.out.println(Arrays.toString(numerosArray));
         System.out.println(arrayToList);
+
+        System.out.println("------------------------");
+        List<Integer> numerosList = new ArrayList<>(Arrays.asList(numerosArray));
+        numerosList.add(15);
+        System.out.println(numerosList);
+
+        List<String> strings = Arrays.asList("1", "2");
+        List.of("1","2");
     }
 }
