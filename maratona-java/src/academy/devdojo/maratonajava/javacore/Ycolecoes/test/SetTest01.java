@@ -18,7 +18,7 @@ public class SetTest01 {
         mangas.add(new Manga(8L,"Cowboy bebop",12.5,0));
         mangas.add(new Manga(7L,"Akira",20.9,2));
 
-        for(Manga manga; mangas){
+        for(Manga manga : mangas){
             System.out.println(manga);
         }
     }
