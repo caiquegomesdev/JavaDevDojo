@@ -28,7 +28,7 @@ public class IteratorTest01 {
 //                mangaIterator.remove();
 //            }
 //        }
-        
+
         mangas.removeIf(manga -> manga.getQuantidade() == 0);
         System.out.println(mangas);
     }
