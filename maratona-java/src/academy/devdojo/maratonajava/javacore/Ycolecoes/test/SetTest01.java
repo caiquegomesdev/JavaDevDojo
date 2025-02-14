@@ -17,6 +17,8 @@ public class SetTest01 {
         mangas.add(new Manga(6L,"Hunte X Hunter",20.0,4));
         mangas.add(new Manga(8L,"Cowboy bebop",12.5,0));
         mangas.add(new Manga(7L,"Akira",20.9,2));
+        mangas.add(new Manga(2L,"Mob psycho 100",10.0));
+        mangas.add(new Manga(11L,"One piece",20.9));
 
         for(Manga manga : mangas){
             System.out.println(manga);
