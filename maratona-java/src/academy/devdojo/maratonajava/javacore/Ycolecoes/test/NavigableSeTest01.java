@@ -36,11 +36,12 @@ public class NavigableSeTest01 {
         mangas.add(new Manga(9L,"Dandadan",15.0));
         mangas.add(new Manga(2L,"Mob psycho 100",10.0));
         mangas.add(new Manga(11L,"One piece",20.9));
+
         for (Manga manga: mangas){
             System.out.println(manga);
         }
 
-        Manga yuyu = new Manga(21,"YUYU HAKUSHO",8,5);
+        Manga yuyu = new Manga(21L,"YUYU HAKUSHO",8,5);
 
         //lower <
         //floor <=
@@ -49,10 +50,12 @@ public class NavigableSeTest01 {
 
         System.out.println("----------------------");
         System.out.println(mangas.lower(yuyu));
+        System.out.println(mangas.lower(yuyu));
         System.out.println(mangas.floor(yuyu));
         System.out.println(mangas.higher(yuyu));
+        System.out.println(mangas.higher(yuyu));
         System.out.println(mangas.ceiling(yuyu));
-
+        System.out.println("----------------------");
         System.out.println(mangas.size());
         System.out.println(mangas.pollFirst());
         System.out.println(mangas.pollLast());
