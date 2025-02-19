@@ -40,7 +40,7 @@ public class NavigableSeTest01 {
             System.out.println(manga);
         }
 
-        Manga yuyu = new Manga(21,"YUYU HAKUSHO",8,5);
+        Manga yuyu = new Manga(21L,"YUYU HAKUSHO",8,5);
 
         //lower <
         //floor <=
