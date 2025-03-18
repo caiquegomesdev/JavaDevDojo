@@ -22,7 +22,7 @@ public class MapTest02 {
         consumidorManga.put(consumidor1, manga1);
         consumidorManga.put(consumidor2, manga4);
         for (Map.Entry<Consumidor, Manga> entry : consumidorManga.entrySet()){
-            System.out.println(entry.getKey().getNome() +" - "+ entry.getValue());
+            System.out.println(entry.getKey().getNome() +" - "+ entry.getValue().getNome());
         }
     }
 }
