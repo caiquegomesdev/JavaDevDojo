@@ -22,7 +22,9 @@ public class NavigableMapTest01 {
             System.out.println(entry.getKey() + "-" + entry.getValue());
         }
 
-        System.out.println(map.headMap("C"));
+        System.out.println(map.headMap("C", true));
+        System.out.println(map.ceilingEntry("C"));
+        
     }
 
 }
