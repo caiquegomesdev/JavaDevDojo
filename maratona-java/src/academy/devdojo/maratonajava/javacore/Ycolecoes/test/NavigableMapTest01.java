@@ -11,16 +11,18 @@ public class NavigableMapTest01 {
         Consumidor consumidor1 = new Consumidor("Caique Gomes");
         Consumidor consumidor2 = new Consumidor("DEVGOMES");
 
-        NavigableMap<String, Consumidor> map = new TreeMap<>();
-            map.put("A", consumidor1);
-            map.put("D", consumidor2);
-//        map.put("B", "Letra B");
-//        map.put("C", "Letra C");
-//        map.put("E", "Letra E");
+        NavigableMap<String, String> map = new TreeMap<>();
+            map.put("A", "Letra A");
+            map.put("D", "Letra D");
+            map.put("B", "Letra B");
+            map.put("C", "Letra C");
+            map.put("E", "Letra E");
 
-        for (Map.Entry<String, Consumidor> entry: map.entrySet()){
+        for (Map.Entry<String, String> entry: map.entrySet()){
             System.out.println(entry.getKey() + "-" + entry.getValue());
         }
+
+        System.out.println(map.headMap("C"));
     }
 
 }
