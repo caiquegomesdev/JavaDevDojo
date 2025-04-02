@@ -24,7 +24,9 @@ public class NavigableMapTest01 {
 
         System.out.println(map.headMap("C", true));
         System.out.println(map.ceilingEntry("C"));
+        System.out.println(map.higherKey("C"));
         
+
     }
 
 }
