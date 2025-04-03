@@ -9,8 +9,9 @@ public class QueueTest01 {
         fila.add("C");
         fila.add("A");
         fila.add("B");
-        for (String s : fila) {
-            System.out.println(s);
+
+        while (!fila.isEmpty()){
+            System.out.println(fila.poll());
         }
 
     }
