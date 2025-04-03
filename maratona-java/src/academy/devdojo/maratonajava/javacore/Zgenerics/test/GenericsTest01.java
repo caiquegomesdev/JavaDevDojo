@@ -18,6 +18,9 @@ public class GenericsTest01 {
         }
         add(lista, new Consumidor("Luffy"));
 
+        for (String o : lista) {
+            System.out.println(o);
+        }
     }
 
     private static void add (List lista, Consumidor consumidor) {
