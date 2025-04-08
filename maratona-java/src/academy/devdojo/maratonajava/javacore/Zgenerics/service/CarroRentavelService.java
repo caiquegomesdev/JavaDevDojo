@@ -21,5 +21,6 @@ public class CarroRentavelService {
         System.out.println("Devolvendo carro " + carro);
         carrosDisponiveis.add(carro);
         System.out.println("Carros disponiveis para alugar: ");
+        System.out.println(carrosDisponiveis);
     }
 }

@@ -21,5 +21,6 @@ public class BarcoRentavelService {
         System.out.println("Devolvendo Barco " + barco);
         barcosDisponiveis.add(barco);
         System.out.println("Barcos disponiveis para alugar: ");
+        System.out.println(barcosDisponiveis);
     }
 }
