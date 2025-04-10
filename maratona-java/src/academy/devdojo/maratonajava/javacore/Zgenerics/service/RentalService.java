@@ -20,7 +20,7 @@ public class RentalService<T> {
         return t;
     }
 
-    public void retornarCarroAlugado(T t){
+    public void retornarObjetoAlugado(T t){
         System.out.println("Devolvendo Objeto " + t);
         objetosDisponiveis.add(t);
         System.out.println("Objetos disponiveis para alugar: ");
