@@ -6,6 +6,8 @@ public class OuterClassesTest01 {
     class Inner{
         public void printOuterClassAttribute(){
             System.out.println(name);
+            System.out.println(this);
+            System.out.println(OuterClassesTest01.this);
         }
     }
 
@@ -16,4 +18,5 @@ public class OuterClassesTest01 {
         inner.printOuterClassAttribute();
         inner1.printOuterClassAttribute();
     }
+
 }
