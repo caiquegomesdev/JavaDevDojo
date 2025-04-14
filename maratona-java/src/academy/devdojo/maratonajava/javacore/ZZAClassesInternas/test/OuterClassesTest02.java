@@ -5,7 +5,7 @@ public class OuterClassesTest02 {
 
     void print(){
         String lastName = "Izuku";
-        
+
         class LocalClass{
             public  void printLocal(){
                 System.out.println(nome + " " +lastName);
