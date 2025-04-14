@@ -9,8 +9,7 @@ public class OuterClassesTest02 {
                 System.out.println(nome);
             }
         }
-        LocalClass localClass = new LocalClass();
-        localClass.printLocal();
+        new LocalClass().printLocal();
     }
 
     public static void main(String[] args) {
