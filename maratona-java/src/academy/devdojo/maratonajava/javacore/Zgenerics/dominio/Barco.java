@@ -7,6 +7,10 @@ public class Barco {
         this.nome = nome;
     }
 
+    public Barco(String canoa, Barco lancha) {
+    }
+
+
     @Override
     public String toString() {
         return "Barco{" +
@@ -14,4 +18,7 @@ public class Barco {
                 '}';
     }
 
+    public String getNome() {
+        return nome;
+    }
 }
