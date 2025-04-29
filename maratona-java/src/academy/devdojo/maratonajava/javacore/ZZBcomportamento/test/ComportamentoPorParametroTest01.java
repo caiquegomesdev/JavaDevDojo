@@ -15,12 +15,25 @@ public class ComportamentoPorParametroTest01 {
 
     public static void main(String[] args) {
         System.out.println( filterGreenCar(cars));
+        System.out.println( filterCarByColor(cars, "green"));
+        System.out.println( filterCarByColor(cars, "red"));
+        System.out.println( filterCarByColor(cars, "black"));
     }
 
     private static List<Car> filterGreenCar(List<Car> cars){
         List<Car> greenCars = new ArrayList<>();
         for (Car car : cars){
             if(car.getColor().equals("green")){
+                greenCars.add(car);
+            }
+        }
+        return greenCars;
+    }
+
+    private static List<Car> filterCarByColor(List<Car> cars, String cor){
+        List<Car> greenCars = new ArrayList<>();
+        for (Car car : cars){
+            if(car.getColor().equals(cor)){
                 greenCars.add(car);
             }
         }
