@@ -18,26 +18,38 @@ public class ComportamentoPorParametroTest01 {
         System.out.println( filterCarByColor(cars, "green"));
         System.out.println( filterCarByColor(cars, "red"));
         System.out.println( filterCarByColor(cars, "black"));
+        System.out.println("---------------");
+        System.out.println( filterByYearBefore(cars, 2015));
     }
 
     private static List<Car> filterGreenCar(List<Car> cars){
-        List<Car> greenCars = new ArrayList<>();
+        List<Car> filteredCar = new ArrayList<>();
         for (Car car : cars){
             if(car.getColor().equals("green")){
-                greenCars.add(car);
+                filteredCar.add(car);
             }
         }
-        return greenCars;
+        return filteredCar;
     }
 
     private static List<Car> filterCarByColor(List<Car> cars, String cor){
-        List<Car> greenCars = new ArrayList<>();
+        List<Car> filteredCar = new ArrayList<>();
         for (Car car : cars){
             if(car.getColor().equals(cor)){
-                greenCars.add(car);
+                filteredCar.add(car);
             }
         }
-        return greenCars;
+        return filteredCar;
+    }
+
+    private static List<Car> filterByYearBefore(List<Car> cars, int year){
+        List<Car> filteredCar = new ArrayList<>();
+        for (Car car : cars){
+            if(car.getYear() < year){
+                filteredCar.add(car);
+            }
+        }
+        return filteredCar;
     }
 
 }
