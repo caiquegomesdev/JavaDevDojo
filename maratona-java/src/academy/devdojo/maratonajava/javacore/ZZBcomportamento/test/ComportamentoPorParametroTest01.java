@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.ZZBcomportamento.test;
 
 import academy.devdojo.maratonajava.javacore.ZZBcomportamento.dominio.Car;
+import academy.devdojo.maratonajava.javacore.ZZBcomportamento.interfaces.CarPredicate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,42 +15,24 @@ public class ComportamentoPorParametroTest01 {
     );
 
     public static void main(String[] args) {
-        System.out.println( filterGreenCar(cars));
-        System.out.println( filterCarByColor(cars, "green"));
-        System.out.println( filterCarByColor(cars, "red"));
-        System.out.println( filterCarByColor(cars, "black"));
-        System.out.println("---------------");
-        System.out.println( filterByYearBefore(cars, 2015));
+        List<Car> greenCars = filter(cars, new CarPredicate() {
+            @Override
+            public boolean test(Car car) {
+                return car.getColor().equals("green");
+            }
+        });
+        System.out.println(greenCars);
     }
 
-    private static List<Car> filterGreenCar(List<Car> cars){
+    private static List<Car> filter(List<Car> cars, CarPredicate carPredicate){
         List<Car> filteredCar = new ArrayList<>();
         for (Car car : cars){
-            if(car.getColor().equals("green")){
+            if(carPredicate.test(car)){
                 filteredCar.add(car);
             }
         }
         return filteredCar;
     }
 
-    private static List<Car> filterCarByColor(List<Car> cars, String cor){
-        List<Car> filteredCar = new ArrayList<>();
-        for (Car car : cars){
-            if(car.getColor().equals(cor)){
-                filteredCar.add(car);
-            }
-        }
-        return filteredCar;
-    }
-
-    private static List<Car> filterByYearBefore(List<Car> cars, int year){
-        List<Car> filteredCar = new ArrayList<>();
-        for (Car car : cars){
-            if(car.getYear() < year){
-                filteredCar.add(car);
-            }
-        }
-        return filteredCar;
-    }
 
 }
