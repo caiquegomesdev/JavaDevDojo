@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.ZZClambdas.test;
 
 import academy.devdojo.maratonajava.javacore.ZZClambdas.dominio.Anime;
+import academy.devdojo.maratonajava.javacore.ZZClambdas.service.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +16,9 @@ public class MethodReferenceTest01 {
                 new Anime("One piece", 1265)
         ));
 
-        Collections.sort(animeList, (a1,a2) -> a1.getTitle().compareTo(a2.getTitle()));
+        //Collections.sort(animeList, (a1,a2) -> a1.getTitle().compareTo(a2.getTitle()));
+        Collections.sort(animeList, (a1,a2) -> AnimeComparators.compareByTitle(a1,a2));
+
 
         System.out.println(animeList);
     }
