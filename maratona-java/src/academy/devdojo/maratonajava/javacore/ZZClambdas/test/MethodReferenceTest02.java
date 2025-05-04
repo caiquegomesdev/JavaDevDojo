@@ -18,6 +18,7 @@ public class MethodReferenceTest02 {
                 new Anime("One piece", 1265)
         ));
         animeList.sort(animeComparators::compareByEpisodesNonStatic);
+        //animeList.sort((a1 -> a2) -> animeComparators.compareByEpisodesNonStatic(a1,a2));
         System.out.println(animeList);
 
     }
