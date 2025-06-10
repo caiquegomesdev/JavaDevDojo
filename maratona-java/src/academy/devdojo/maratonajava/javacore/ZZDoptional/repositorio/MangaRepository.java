@@ -12,11 +12,11 @@ public class MangaRepository {
             new Manga(2, "One punchman",100)
     );
 
-    private static Optional<Manga> findById(Integer id){
+    public static Optional<Manga> findById(Integer id){
         return  findBy(m -> m.getTitle().equals(id));
     }
 
-    private static Optional<Manga> findByTitle(String title){
+    public static Optional<Manga> findByTitle(String title){
         return  findBy(m -> m.getTitle().equals(title));
     }
 
